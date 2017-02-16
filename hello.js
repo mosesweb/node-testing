@@ -6,7 +6,7 @@ function sleep (time) {
 
 var i = 0, howManyTimes = 10;
 function f() {
-    return( "hi! " + i );
+    console.log( "hi! " + i );
     i++;
     if( i < howManyTimes ){
         setTimeout( f, 1000 );

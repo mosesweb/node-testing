@@ -57,9 +57,12 @@ exports.world = function () {
 }
 
 var hello = require('./hello');
+var is = 0;
 app.get('/', function(req, res)
 {
-  res.send("hehiehriehr hejhej");
+  
+    is++;
+  res.send("hehiehriehr hejhej" + is);
 });
 app.listen(8080, function () {
   console.log('Example app listening on port 3000!')
@@ -69,3 +72,4 @@ app.listen(8080, function () {
 hello.world();
 hello.counter();
 
+// https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm
